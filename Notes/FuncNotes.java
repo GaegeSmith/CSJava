@@ -43,14 +43,18 @@ public class FuncNotes {
     private static void futureInvestments() {
         Scanner ui = newScanner();
         System.out.print("Enter investment amount: ");
-        float invAmt = ui.nextFloat();
+        double invAmt = ui.nextDouble();
         System.out.print("Enter the annual interest rate percentage: ");
-        float monIntRt = ui.nextFloat();
+        double monIntRt = ui.nextDouble() / 100.0;
         System.out.print("Enter number of years: ");
-        int numYears = ui.nextInt();
-        System.out.println("Future value is: $" + invAmt * Math.pow((1 + monIntRt), numYears * 12));
+        double numYears = ui.nextDouble();
+        System.out.println("Future value is: $" + 
+            (invAmt * Math.pow(
+                (1 + monIntRt), 
+                (numYears * 12)
+                )
+            ));
 
-         
     }
 
     private static void drivingCost() {
