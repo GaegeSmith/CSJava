@@ -1,12 +1,13 @@
 import java.util.Scanner;
 import java.lang.Math;
+import java.text.DecimalFormat;
 
 public class FuncNotes {
     public static void main(String[] args) {
         // convertMiletoKM();
         // calculateEnergy();
-        futureInvestments();
-        // drivingCost();
+        // futureInvestments();
+        drivingCost();
     }
 
     private static Scanner newScanner() {
@@ -41,6 +42,13 @@ public class FuncNotes {
     }
 
     private static void futureInvestments() {
+        // https://stackoverflow.com/questions/8137218/trim-double-to-2-decimal-places
+        DecimalFormat df = new DecimalFormat("#.##");
+        // the example for this did the math wrong somehow,
+        // initialInvestment = 1000
+        // monthlyInterestRate = 3.25% or 0.0325
+        // numberOfYears = 1
+        // result is $1467.85
         Scanner ui = newScanner();
         System.out.print("Enter investment amount: ");
         double invAmt = ui.nextDouble();
@@ -49,16 +57,30 @@ public class FuncNotes {
         System.out.print("Enter number of years: ");
         double numYears = ui.nextDouble();
         System.out.println("Future value is: $" + 
-            (invAmt * Math.pow(
+            df.format(invAmt * (Math.pow(
                 (1 + monIntRt), 
                 (numYears * 12)
-                )
+                ))
             ));
-
+        ui.close();
+            
     }
 
     private static void drivingCost() {
+        // https://stackoverflow.com/questions/8137218/trim-double-to-2-decimal-places
+        DecimalFormat df = new DecimalFormat("#.##");
+        Scanner ui = newScanner();
 
+        System.out.print("Enter driving distance in miles: ");
+        double drvDist = ui.nextDouble();
+
+        System.out.print("Enter fuel millage in mile per gallon: ");
+        double mpg = ui.nextDouble();
+
+        System.out.print("Enter price per gallon in dollars: ");
+        double ppg = ui.nextDouble();
+
+        System.out.println("The cost of driving " + drvDist + " miles at " + mpg + " miles per gallon is $" + df.format(drvDist/mpg*ppg));
         
     }
 }
