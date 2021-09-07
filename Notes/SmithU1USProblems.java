@@ -2,11 +2,11 @@ import java.util.Scanner;
 import java.lang.Math;
 import java.text.DecimalFormat;
 
-public class FuncNotes {
+public class SmithU1USProblems {
     public static void main(String[] args) {
-        // convertMiletoKM();
-        // calculateEnergy();
-        // futureInvestments();
+        convertMiletoKM();
+        calculateEnergy();
+        futureInvestments();
         drivingCost();
     }
 
