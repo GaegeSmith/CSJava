@@ -4,10 +4,10 @@ import java.text.DecimalFormat;
 
 public class SmithU1USProblems {
     public static void main(String[] args) {
-        convertMiletoKM();
-        calculateEnergy();
-        futureInvestments();
-        drivingCost();
+        // convertMiletoKM();
+        // calculateEnergy();
+        futureInvestments(); 
+        // drivingCost();
     }
 
     private static Scanner newScanner() {
@@ -53,7 +53,7 @@ public class SmithU1USProblems {
         System.out.print("Enter investment amount: ");
         double invAmt = ui.nextDouble();
         System.out.print("Enter the annual interest rate percentage: ");
-        double monIntRt = ui.nextDouble() / 100.0;
+        double monIntRt = ui.nextDouble() / 1200.0;
         System.out.print("Enter number of years: ");
         double numYears = ui.nextDouble();
         System.out.println("Future value is: $" + 
