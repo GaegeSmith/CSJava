@@ -1,13 +1,7 @@
+import java.util.*;
+import java.lang.*;
 public class Useful {
-    public static void clear(){
-    //Clears Screen in java
-        if (System.getProperty("os.name").contains("Windows"))
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        else
-            Runtime.getRuntime().exec("clear");
-        
+    public static Scanner newScanner() {
+        return new Scanner(System.in);
     }
-
-
-    
 }
