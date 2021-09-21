@@ -30,12 +30,19 @@ public class SmithU1S12Problems {
     }
     public static void main(String[] args) {
         // triangleArea();
-        midPointTabel();
-        // minuteYearConverter();
+        // midPointTabel();
+        minuteYearConverter();
         // triangleVolume();
     }
     private static Scanner newScanner() {
         return new Scanner(System.in);
+    }
+    private static void minuteYearConverter() {
+        Scanner ui = newScanner();
+        System.out.print("Enter the number of minutes: ");
+        double minutes = ui.nextDouble();
+        System.out.println("\n" + minutes + " minutes is approximately " + years + " years and " + );
+
     }
     private static void midPointTabel() {
         
