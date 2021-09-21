@@ -21,15 +21,24 @@ public class SmithU1S12Problems {
         public double len() {
             return Math.sqrt(Math.pow((this.pt1.x - this.pt0.x), 2) + Math.pow((this.pt1.y - this.pt0.y), 2));
         }
+        public Point midPnt() {
+            return new Point(
+                (this.pt0.x + this.pt1.x) / 2, (this.pt0.y + this.pt1.y) / 2
+            );
+        }
+
     }
     public static void main(String[] args) {
-        triangleArea();
-        // midPointTabel();
+        // triangleArea();
+        midPointTabel();
         // minuteYearConverter();
         // triangleVolume();
     }
     private static Scanner newScanner() {
         return new Scanner(System.in);
+    }
+    private static void midPointTabel() {
+        
     }
     private static void triangleArea() {
         Scanner ui = newScanner();
@@ -45,7 +54,11 @@ public class SmithU1S12Problems {
         Line side1 = new Line(ptA, ptC);
         Line side2 = new Line(ptC, ptB);
 
-        double 
+        double s = (side0.len() + side1.len() + side2.len()) / 2;
+        double area = Math.sqrt(
+            s * (s - side0.len()) * (s - side1.len()) * (s - side2.len())
+        );
+        System.out.println(area);
 
 
     }
