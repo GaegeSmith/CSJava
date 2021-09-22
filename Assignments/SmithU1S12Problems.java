@@ -31,8 +31,8 @@ public class SmithU1S12Problems {
     public static void main(String[] args) {
         // triangleArea();
         // midPointTabel();
-        minuteYearConverter();
-        // triangleVolume();
+        // minuteYearConverter();
+        triangleVolume();
     }
     private static Scanner newScanner() {
         return new Scanner(System.in);
@@ -44,9 +44,15 @@ public class SmithU1S12Problems {
         System.out.println("\n" + minutes + " minutes is approximately " + years + " years and " + );
 
     }
+    
     private static void midPointTabel() {
         
     }
+
+    private static void triangleVolume() {
+        
+    }
+
     private static void triangleArea() {
         Scanner ui = newScanner();
         System.out.println("Type the x and y for each point and hit enter after each number.\nPoint A");

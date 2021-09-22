@@ -17,6 +17,17 @@ public class Useful {
     private static Scanner newScanner() {
         return new Scanner(System.in);
     }
+
+    private static int howMany(String s, char chr) {
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(index) == chr) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     private static class Point {
         double x;
         double y;
