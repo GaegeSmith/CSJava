@@ -2,7 +2,7 @@ import java.util.*;
 import java.lang.*;
 public class Useful {
     public static void main(String[] args) {
-        System.out.println(reverse("Hello there"));
+        System.out.println("Useful");
     }
     private static String reverse(String reversee) {
         // init a result to add each letter to
