@@ -1,6 +1,19 @@
 import java.util.*;
 import java.lang.*;
 public class Useful {
+    public static void main(String[] args) {
+        System.out.println(reverse("Hello there"));
+    }
+    private static String reverse(String reversee) {
+        // init a result to add each letter to
+        String result = "";
+        // loop backwards through the string and concat the letter to result
+        for (int i = reversee.length() - 1; i >= 0; i--) {
+            result += reversee.substring(i, i+1);
+        }
+        // return result
+        return result;
+    }
     private static Scanner newScanner() {
         return new Scanner(System.in);
     }
