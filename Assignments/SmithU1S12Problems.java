@@ -3,10 +3,7 @@ import java.lang.*;
 
 public class SmithU1S12Problems {
     public class Useful {
-        // public static void main(String[] args) {
-        //     System.out.println("Useful");
-        // }
-        private static String reverse(String reversee) {
+        public static String reverse(String reversee) {
             // init a result to add each letter to
             String result = "";
             // loop backwards through the string and concat the letter to result
@@ -16,11 +13,11 @@ public class SmithU1S12Problems {
             // return result
             return result;
         }
-        private static Scanner newScanner() {
+        public static Scanner newScanner() {
             return new Scanner(System.in);
         }
-    
-        private static int howMany(String s, char chr) {
+        
+        public static int howMany(String s, char chr) {
             int count = 0;
             for (int i = 0; i < s.length(); i++) {
                 if (s.charAt(i) == chr) {
@@ -30,7 +27,7 @@ public class SmithU1S12Problems {
             return count;
         }
     
-        private static class Point {
+        public static class Point {
             double x;
             double y;
             Point(double x, double y) {
@@ -39,7 +36,7 @@ public class SmithU1S12Problems {
             }
         }
         
-        private static class Line {
+        public static class Line {
             Point pt0;
             Point pt1;
             Line(Point pt0, Point pt1) {
@@ -60,7 +57,7 @@ public class SmithU1S12Problems {
 
     public static void main(String[] args) {
         // triangleArea();
-        midPointTabel();
+        // midPointTable();
         // minuteYearConverter();
         // triangleVolume();
     }
@@ -79,8 +76,19 @@ public class SmithU1S12Problems {
 
     }
     
-    private static void midPointTabel() {
-        
+    private static void midPointTable(){
+        System.out.println("  a\t  b\tMiddle Point");
+        System.out.printf("(0,0)\t(2,1)\t%s\r\n",midPoint(0,0,2,1));
+        System.out.printf("(1,4)\t(4,2)\t%s\r\n",midPoint(1,4,4,2));
+        System.out.printf("(2,7)\t(6,3)\t%s\r\n",midPoint(2,7,6,3));
+        System.out.printf("(3,9)\t(10,5)\t%s\r\n",midPoint(3,9,10,5));
+        System.out.printf("(4,11)\t(12,7)\t%s\n",midPoint(4,11,12,7));
+    }
+    private static String midPoint(double x1,double y1,double x2,double y2){
+        double deltaX =(x2-x1)/2+x1;
+        double deltaY =(y2-y1)/2+y1;
+        String output="("+deltaX+","+deltaY+")";
+        return output;
     }
 
     private static void triangleVolume() {
