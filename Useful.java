@@ -1,3 +1,6 @@
+import java.util.*;
+import java.lang.*;
+
 public class Useful {
     public static void main(String[] args) {
         System.out.println("Useful");
@@ -15,7 +18,7 @@ public class Useful {
     public static Scanner newScanner() {
         return new Scanner(System.in);
     }
-    
+
     public static int howMany(String s, char chr) {
         int count = 0;
         for (int i = 0; i < s.length(); i++) {
