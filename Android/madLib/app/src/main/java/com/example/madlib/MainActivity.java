@@ -1,4 +1,4 @@
-package com.example.scifinamegen;
+package com.example.madlib;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         String sciFiLast = city.substring(rC) + school.substring(rS);
 
         String sciFiHome = brother.substring(rB) + sister.substring(rSi);
-        output.setText("Hello there " + sciFiFirst + " " + sciFiLast + " from " + sciFiHome);
         output.setText(
                 String.format("Hello there %s %s from %s", sciFiFirst, sciFiLast, sciFiHome)
         );
