@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        firstNameTXT = findViewById(R.id.firstTXT);
+        firstNameTXT = findViewById(R.id.firstWTXT);
+        firstNameTXT.setText();
         lastNameTXT = findViewById(R.id.lastTXT);
         cityTXT = findViewById(R.id.cityTXT);
         schoolTXT = findViewById(R.id.schoolTXT);
