@@ -1,3 +1,7 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class ArrayListMethodsNotes {
     public class Useful {
         public static void main(String[] args) {
@@ -58,6 +62,18 @@ public class ArrayListMethodsNotes {
     }
 
     public static void main(String[] args) {
+        ArrayList<Integer> arrList = new ArrayList<Integer>();
+        int[] arr = {1, 2, 0, 3, 2, 4, 2, 1, 0, 1, 3, 2};
         
+        arrList = createArrayList(arr);
+        System.out.println(arrList);
+    }
+
+    public static ArrayList<Integer> createArrayList(int[] input) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        for (int i = 0; i < input.length; i++) {
+            result.add(input[i]);
+        }
+        return result;
     }
 }
