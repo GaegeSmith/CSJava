@@ -1,6 +1,6 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class ArrayListMethodsNotes {
     public class Useful {
@@ -65,8 +65,9 @@ public class ArrayListMethodsNotes {
         ArrayList<Integer> arrList = new ArrayList<Integer>();
         int[] arr = {1, 2, 0, 3, 2, 4, 2, 1, 0, 1, 3, 2};
 
-        
+        System.out.println(System.currentTimeMillis());
         System.out.println(mode(createArrayList(arr)));
+        System.out.println(System.currentTimeMillis());
     }
 
     public static ArrayList<Integer> createArrayList(int[] input) {
