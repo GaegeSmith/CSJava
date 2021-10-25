@@ -1,5 +1,5 @@
-import java.util.*;
-import java.lang.*;
+import java.util.Scanner;
+import java.lang.Math;
 public class Useful {
     public static void main(String[] args) {
         System.out.println("Useful");
