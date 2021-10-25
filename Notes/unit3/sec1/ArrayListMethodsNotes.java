@@ -64,9 +64,9 @@ public class ArrayListMethodsNotes {
     public static void main(String[] args) {
         ArrayList<Integer> arrList = new ArrayList<Integer>();
         int[] arr = {1, 2, 0, 3, 2, 4, 2, 1, 0, 1, 3, 2};
+
         
-        arrList = createArrayList(arr);
-        System.out.println(arrList);
+        System.out.println(mode(createArrayList(arr)));
     }
 
     public static ArrayList<Integer> createArrayList(int[] input) {
@@ -76,4 +76,85 @@ public class ArrayListMethodsNotes {
         }
         return result;
     }
+
+    public static int minIntAL(ArrayList<Integer> temp) {
+        int min = 0;
+        for (int i = 0; i < temp.size(); i++) {
+            if (i == 0) {
+                min = temp.get(i);
+            } else if (temp.get(i) < min) {
+                min = temp.get(i);
+            }
+        }
+        return min;
+    }
+
+    public static int maxIntAL(ArrayList<Integer> temp) {
+        int max = 0;
+        for (int i = 0; i < temp.size(); i++) {
+            if (i == 0) {
+                max = temp.get(i);
+            } else if (temp.get(i) > max) {
+                max = temp.get(i);
+            }
+        }
+        return max;
+    }
+
+    public static int aveIntAL(ArrayList<Integer> temp) {
+        int ave = 0;
+        for (int i = 0; i < temp.size(); i++) {
+            ave += temp.get(i);
+        }
+        return ave / temp.size();
+    }
+
+    // Determine the frequency of a certain property; return -1 if no exist
+    public static int count(ArrayList<Integer> temp, int valueToCheck) {
+        int count = 0;
+        // for each
+        for (int i: temp) {
+            if (i == valueToCheck) {
+                count++;
+            }
+        }
+
+        if (count != 0) {
+            return count;
+        }
+        return -1;
+    }
+
+    public static ArrayList<Integer> rmDupe(ArrayList<Integer> temp) {
+        ArrayList<Integer> out = new ArrayList<Integer>();
+        for (int i : temp) {
+            if (!out.contains(i)) {
+                out.add(i);
+            }
+        }
+        return out;
+    }
+
+    public static int mode(ArrayList<Integer> temp) {
+        ArrayList<Integer> vals = rmDupe(temp);
+        ArrayList<Integer> count = new ArrayList<Integer>();
+        int mode = 0;
+        for (int i = 0; i < vals.size(); i++) {
+            count.add(
+                count(temp, vals.get(i))
+            );
+            if (i == 0) {
+                mode = vals.get(i);
+            } else if (count.get(vals.indexOf(mode)) < maxIntAL(count)) {
+                mode = vals.get(
+                    count.indexOf(
+                        maxIntAL(count)
+                    )
+                );
+            }
+        }
+
+        return mode;
+    }
+
 }
