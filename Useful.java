@@ -4,7 +4,7 @@ import java.lang.*;
 public class Useful {
     public static void main(String[] args) {
         System.out.println("\n\tNobody:\n\tJava:");
-        int bigest = 2147483647;
+        int bigest = Integer.MAX_VALUE;
         System.out.println("\t" + bigest + " + 1 = " + (bigest + 1) + "\n");
     }
     public static String reverse(String reversee) {
@@ -19,6 +19,10 @@ public class Useful {
     }
     public static Scanner newScanner() {
         return new Scanner(System.in);
+    }
+    public static int[] intputs() {
+        Scanner ui = newScanner()
+        String tmp = 
     }
 
     public static int howMany(String s, char chr) {
