@@ -73,6 +73,8 @@ public class SmithU3S6 {
         int[] sorted = {21, 11, 9, 7, 5, 4, 4, 3, 1, 1};
         System.out.println(isSorted(notSorted));
         System.out.println(isSorted(sorted));
+
+        bean();
     }
 
     public static void evenOddChecker(int[] listy) {
@@ -154,6 +156,7 @@ public class SmithU3S6 {
 
     public static void bean() {
         Scanner ui = Useful.newScanner();
+        System.out.print("")
         int ballCnt = ui.nextInt();
         int lvlCnt = ui.nextInt();
         Ball[] balls = new Ball[ballCnt];

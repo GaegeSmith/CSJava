@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/outputLBL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total Price"
@@ -45,19 +45,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButton0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Small" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Medium" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Large" />
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/pizza_the_hutt" />
+        app:srcCompat="@drawable/pizza" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -89,21 +89,21 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/anchovies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Anchovies" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/bacon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Bacon" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/jalapenos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
