@@ -1,6 +1,9 @@
 public class MediaPlayer {
      public static void main(String[] args) {
-          
+          Songs[] things = new Songs[5];
+          for (int i = 0; i < things.length; i++) {
+               things[i] = new Songs();
+          }
           Songs s1 = new Songs();
           //call the parameters of an object
           System.out.println(s1.title);
