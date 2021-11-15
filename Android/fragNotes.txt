@@ -1,0 +1,22 @@
+where does add moar icons in da menu
+activity_main_drawer.xml
+	id, icon, title
+	create icon drawable
+		rclick on drawable folder > new > vector assets > clipart button
+
+Where do I change menu top portion
+	layout/nav_header_main.xml
+
+How do I remove the floating action button
+	layout/app_bar_main.xml
+	remove code in main.java
+
+add new fragment
+	goto src/main/res/navigation/mobile_navigation.xml
+	copy-paste a frag tag
+		id, name, label, layout
+	add package to ui
+		rclick ui > new > package
+	add frag.java to package
+	MainActivity.java
+		mAppBarConfig add r.id.nav
