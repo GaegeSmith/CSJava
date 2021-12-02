@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.madfl.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_numberguess"
+        android:name="com.example.madfl.ui.guess_the_number.GuessTheNumberFragment"
+        android:label="@string/menu_numberguess"
+        tools:layout="@layout/fragment_guess_the_number" />
+
+    <fragment
+        android:id="@+id/nav_mad_lib"
+        android:name="com.example.madfl.ui.madlib.MadLibFragment"
+        android:label="@string/menu_madlib"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_sci_fi"
+        android:name="com.example.madfl.ui.madlib.MadLibFragment"
+        android:label="@string/menu_scifi"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
