@@ -10,7 +10,7 @@ public class MadLibViewModel extends ViewModel {
 
     public MadLibViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is madlib fragment");
+        mText.setValue("This a madlib fragment");
     }
 
     public LiveData<String> getText() {

@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/nav_sci_fi"
-        android:name="com.example.madfl.ui.madlib.MadLibFragment"
+        android:name="com.example.madfl.ui.sci_fi_name.SciFiName"
         android:label="@string/menu_scifi"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

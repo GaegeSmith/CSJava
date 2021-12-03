@@ -10,7 +10,7 @@ public class GuessTheNumberViewModel extends ViewModel {
 
     public GuessTheNumberViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is  fragment");
+        mText.setValue("This a number guessing fragment");
     }
 
     public LiveData<String> getText() {

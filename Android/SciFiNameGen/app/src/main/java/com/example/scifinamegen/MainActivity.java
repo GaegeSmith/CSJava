@@ -10,12 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     //Defining the widget vars
-    private EditText firstNameTXT;
-    private EditText lastNameTXT;
-    private EditText cityTXT;
-    private EditText schoolTXT;
-    private EditText broTXT;
-    private EditText sisTXT;
+    private EditText firstNameTXT, lastNameTXT, cityTXT, schoolTXT, broTXT, sisTXT;
     private TextView output;
     private Button generateBTN;
     @Override
