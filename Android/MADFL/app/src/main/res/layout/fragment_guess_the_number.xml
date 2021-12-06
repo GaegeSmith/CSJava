@@ -52,4 +52,14 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/guessTheNumTXT"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hiloTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginBottom="88dp"
+        android:text="Guess Below"
+        app:layout_constraintBottom_toTopOf="@+id/guessIN"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

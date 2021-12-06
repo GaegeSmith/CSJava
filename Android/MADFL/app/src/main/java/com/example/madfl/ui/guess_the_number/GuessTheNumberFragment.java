@@ -17,12 +17,17 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.madfl.R;
 import com.example.madfl.databinding.FragmentGuessTheNumberBinding;
 
+import java.util.Random;
+
 public class GuessTheNumberFragment extends Fragment {
 
     private FragmentGuessTheNumberBinding binding;
-    private TextView guessTheNumTXT;
+    private TextView guessTheNumTXT, hiloTXT;
     private Button resetBTN, submitBTN;
     private EditText guessIN;
+    private boolean isFirst = true;
+    private int randInt;
+    private Random random;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -33,6 +38,10 @@ public class GuessTheNumberFragment extends Fragment {
         resetBTN = root.findViewById(R.id.resetBTNNUM);
         submitBTN = root.findViewById(R.id.submitBTNNUM);
         guessIN = root.findViewById(R.id.guessIN);
+        hiloTXT = root.findViewById(R.id.hiloTXT);
+        
+
+
         return root;
     }
 

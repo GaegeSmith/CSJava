@@ -1,4 +1,4 @@
-package com.example.intentex;
+package com.example.intentexample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,25 +11,31 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     private Button first;
-    private EditText firstInfo;
+    private EditText firstInformation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        firstInfo = findViewById(R.id.firstUI);
-
         first=findViewById(R.id.firstBTN);
+        firstInformation = findViewById(R.id.firstUI);  //firstUI is my EditText
+
+
         first.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String ui = String.valueOf(firstInformation.getText());
 
                 //Intent objName = new Intent(Which activity are you in, where are you going?);
                 Intent i = new Intent(MainActivity.this,SecondActivity.class);
-                i.putExtra("user input", String.valueOf(firstInfo.getText()));
+                i.putExtra("user input",ui);
+
+
                 startActivity(i);
             }
         });
+
 
 
     }
