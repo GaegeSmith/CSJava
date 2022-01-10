@@ -31,6 +31,8 @@ public class Zoo {
                 case "visit cages" : 
                 msg = visitCages(animals);
                 break;
+                case "look down":
+                msg = lookDown(animals);
                 default : msg = "You flail helplessly with indecision.";
             }
             System.out.println("\n" + msg);
@@ -43,6 +45,44 @@ public class Zoo {
 
     }
 
+    public static String lookDown(List<Animal> animals) {
+        String msg = "";
+        // check if that animal is an instanceof Swimming
+        for (Animal a : animals) {
+            if (a instanceof Swimming) {
+                Swimming f = (Swimming) a;
+                msg += a.getName() + ": \n\t" + f.swim() + "\n";
+            }
+        }
+
+        return msg;
+    }
+
+    public static String lookUp(List<Animal> animals) {
+        String msg = "";
+        // check if that animal is an instanceof Flying
+        for (Animal a : animals) {
+            if (a instanceof Flying) {
+                Flying f = (Flying) a;
+                msg += a.getName() + ": \n\t" + f.fly() + "\n";
+            }
+        }
+
+        return msg;
+    }
+
+    public static String lookAround(List<Animal> animals) {
+        String msg = "";
+        // check if that animal is an instanceof Walking
+        for (Animal a : animals) {
+            if (a instanceof Walking) {
+                Walking f = (Walking) a;
+                msg += a.getName() + ": \n\t" + f.walk() + "\n";
+            }
+        }
+
+        return msg;
+    }
 
     public static String visitCages(List<Animal> animals) {
        String msg = "";
