@@ -74,7 +74,8 @@ public class SmithU3S6 {
         System.out.println(isSorted(notSorted));
         System.out.println(isSorted(sorted));
 
-        bean();
+        // work in progress
+        // bean();
     }
 
     public static void evenOddChecker(int[] listy) {
@@ -153,19 +154,19 @@ public class SmithU3S6 {
         return true;
         
     }
-
-    public static void bean() {
-        Scanner ui = Useful.newScanner();
-        System.out.print("")
-        int ballCnt = ui.nextInt();
-        int lvlCnt = ui.nextInt();
-        Ball[] balls = new Ball[ballCnt];
-        for (int i = 0; i < balls.length; i++) {
-            balls[i] = new Ball(lvlCnt);
-        }
+    // work in progress
+    // public static void bean() {
+    //     Scanner ui = Useful.newScanner();
+    //     System.out.print("")
+    //     int ballCnt = ui.nextInt();
+    //     int lvlCnt = ui.nextInt();
+    //     Ball[] balls = new Ball[ballCnt];
+    //     for (int i = 0; i < balls.length; i++) {
+    //         balls[i] = new Ball(lvlCnt);
+    //     }
         
 
 
-    }
+    // }
 
 }
