@@ -6,6 +6,6 @@ public class StarWhale extends SpaceAnimal implements Flying {
         super(name, desc);
     }
     public String fly() {
-        return "";
+        return "Majesctically floating through space at speeds similar to star ships.";
     }
 }

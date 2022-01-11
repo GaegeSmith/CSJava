@@ -1,6 +1,6 @@
 public class SpaceAnimal extends Animal {
     public SpaceAnimal() {
-        super("", "animals, in SPACE, wAAt");
+        super("Filler text", "animals, in SPACE, wAAt");
     }
     public SpaceAnimal(String name, String desc) {
         super(name, desc);
