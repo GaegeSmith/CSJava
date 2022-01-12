@@ -5,4 +5,8 @@ public class Birb extends Animal {
     public Birb(String name, String desc) {
         super(name, desc);
     }
+    @Override
+    public String makeNoise() {
+        return "k-awe";
+    }
 }

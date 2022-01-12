@@ -5,4 +5,12 @@ public class BrownBear extends Bear {
     public BrownBear(String name, String desc) {
         super(name, desc);
     }
+    @Override
+    public String walk() {
+        return "Hunt some picanic basket";
+    }
+    @Override
+    public String makeNoise() {
+        return "Hello boo boo!";
+    }
 }

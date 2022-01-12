@@ -8,4 +8,8 @@ public class TrashPanda extends Bear implements Swimming {
     public String swim() {
         return "Swim with floaties";
     }
+    @Override
+    public String walk() {
+        return "off to steal some stuff";
+    }
 }

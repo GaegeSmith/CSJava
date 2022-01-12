@@ -8,4 +8,8 @@ public class Wookie extends SpaceAnimal implements Walking {
     public String walk() {
         return "5 foot stride";
     }
+    @Override
+    public String makeNoise() {
+        return "waaARGARGRGARGRGAGRAHHHH";
+    }
 }

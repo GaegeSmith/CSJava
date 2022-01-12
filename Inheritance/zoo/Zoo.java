@@ -33,6 +33,19 @@ public class Zoo {
                 break;
                 case "look down":
                 msg = lookDown(animals);
+                break;
+                case "look up":
+                msg = lookUp(animals);
+                break;
+                case "look around":
+                msg = lookAround(animals);
+                break;
+                case "listen":
+                msg = listen(animals);
+                break;
+                case "look at bears":
+                msg = lookBears(animals);
+                break;
                 default : msg = "You flail helplessly with indecision.";
             }
             System.out.println("\n" + msg);
@@ -44,7 +57,16 @@ public class Zoo {
         System.out.println(Math.random() < .5 ? "\nHave a nice day!  Hope you come back!" : "\nAn escaped lion eats you on your way out.  Sorry!");
 
     }
-
+    public static String lookBears(List<Animal> animals) {
+        String msg = "";
+        for (Animal a : animals) {
+            if (a instanceof Bear) {
+                Bear b = (Bear) a;
+                msg += a.getName() + ": \n\tWalk: " + b.walk() + "\n";
+            }
+        }
+        return msg;
+    }
     public static String lookDown(List<Animal> animals) {
         String msg = "";
         // check if that animal is an instanceof Swimming
@@ -83,7 +105,14 @@ public class Zoo {
 
         return msg;
     }
-
+    public static String listen(List<Animal> animals) {
+        String msg = "";
+        for (Animal a: animals) {
+            
+            msg += a.getName() + ": \n\t" + a.makeNoise() + "\n";
+        }
+        return msg;
+    }
     public static String visitCages(List<Animal> animals) {
        String msg = "";
        for (Animal a: animals) {
@@ -126,6 +155,12 @@ public class Zoo {
         animals.add(new Blues());
         animals.add(new Black());
         animals.add(new White());
+        animals.add(new Groot());
+        animals.add(new StarWhale());
+        animals.add(new MichaelPhelps());
+        animals.add(new Wookie());
+        animals.add(new Anglerfish());
+        animals.add(new Whale());
         
     }
 }

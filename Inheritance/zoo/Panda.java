@@ -5,4 +5,8 @@ public class Panda extends Bear {
     public Panda(String name, String desc) {
         super(name, desc);
     }
+    @Override
+    public String walk() {
+        return "They don't.";
+    }
 }
