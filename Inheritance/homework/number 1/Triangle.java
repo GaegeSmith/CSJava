@@ -24,7 +24,7 @@ public class Triangle extends GeometricObject{
         return this.s2;
     }
     public String toString() {
-        return "Triangle:\n\tside1 = " + this.s0 + "\n\tside2 = " + this.s1 + "\n\tside3 = " + this.s2;
+        return "Triangle:\n\tside1 = " + this.s0 + "\n\tside2 = " + this.s1 + "\n\tside3 = " + this.s2 + "\n\t" + this.getArea() + "\n\t" + this.getPerimeter();
     }
 
     @Override
