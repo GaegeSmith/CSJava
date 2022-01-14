@@ -1,18 +1,20 @@
 import java.util.Scanner;
 
-public class TestProgam {
-    static Scanner in = newScanner();
+public class TestProgram {
+    public static Scanner in = newScanner();
     public static void main(String[] args) {
         boolean filled = input("Is the triangle filled? (y/n)").equals("y");
+        String color = input("What color is the triangle?");
         Triangle t = new Triangle(
             doubleInput("Length of side 1"),
             doubleInput("Length of side 2"),
             doubleInput("Length of side 3"),
-            input("Color"),
+            color,
             filled
         );
 
         System.out.println(t.toString());
+        in.close();
     }
 
     public static Scanner newScanner() {
