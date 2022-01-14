@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=SpaceAnimal
-comment1.params=
-comment1.target=SpaceAnimal()
-comment2.params=name\ desc
-comment2.target=SpaceAnimal(java.lang.String,\ java.lang.String)
-comment3.params=
-comment3.target=java.lang.String\ makeNoise()
-numComments=4
