@@ -30,6 +30,6 @@ public class Checking extends Account {
     @Override
     public void deposit(double amount) {
         this.balance += amount;
-        this.limitReached = this.getBalance() < -this.OVER_DRAFT_LIMIT;
+        this.limitReached = this.checkOverdraftLimit();
     }
 }
